@@ -1,0 +1,15 @@
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.Infrastructure\bin\Debug\freelancerBD.Infrastructure.dll.config
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.Infrastructure\bin\Debug\freelancerBD.Infrastructure.dll
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.Infrastructure\bin\Debug\freelancerBD.Infrastructure.pdb
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.Infrastructure\bin\Debug\EntityFramework.dll
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.Infrastructure\bin\Debug\EntityFramework.xml
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.Infrastructure\obj\Debug\freelancerBD.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.Infrastructure\obj\Debug\freelancerBD.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.Infrastructure\obj\Debug\freelancerBD.Infrastructure.csproj.CopyComplete
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.Infrastructure\obj\Debug\freelancerBD.Infrastructure.dll
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.Infrastructure\obj\Debug\freelancerBD.Infrastructure.pdb
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.Infrastructure\bin\Debug\freelancerBD.Entities.dll
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.Infrastructure\bin\Debug\freelancerBD.Entities.pdb
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.Infrastructure\bin\Debug\freelancerBD.Entities.dll.config
