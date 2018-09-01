@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+  margin: 0;
+  background: grey;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #62A765;
+  height: 100px;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+
+  float: left;
+  position: relative;
+  padding-top: 10px;
+  height: 80px;
+
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+ 
+  margin: 15px;
+  padding: 30px;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 20px;
+
+  position: relative;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+#side{
+  background-color: #222;
+  width: 22%;
+  height: 550px;
+}
+
+.sidenav {
+     margin-top: 8%;
+    height: 83%;
+    width: 22%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    overflow-x: hidden;
+    padding-top: 0px;
+
+}
+
+.sidenav a, .dropdown-btn {
+    padding: 6px 14px 6px 11px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: inline-block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #62A765;
+}
+
+.active {
+    background-color: #62A765;
+    color: #262626;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

@@ -11,6 +11,7 @@ namespace freelancerBD.Infrastructure
     public class FreelancerContext : DbContext
     {
         public DbSet<Admin> Admins { get; set; }
+        public DbSet<User> Users { get; set; }
         public DbSet<AdminAction> AdminActions { get; set; }
         public DbSet<Bidder> Bidders { get; set; }
         public DbSet<Client> Clients { get; set; }

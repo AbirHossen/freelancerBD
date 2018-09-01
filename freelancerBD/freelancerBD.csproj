@@ -153,6 +153,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -164,6 +165,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -198,10 +200,13 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\_Index.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -215,6 +220,24 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\freelancerBD.Entities\freelancerBD.Entities.csproj">
+      <Project>{8a75abc2-fa38-480c-8946-d4a3d59cc449}</Project>
+      <Name>freelancerBD.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\freelancerBD.Infrastructure\freelancerBD.Infrastructure.csproj">
+      <Project>{f3cf2ed8-e261-4f20-aea9-497a5234e2d6}</Project>
+      <Name>freelancerBD.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\freelancerBD.IService\freelancerBD.IService.csproj">
+      <Project>{104ca2dd-88d8-435f-85f3-708b0c429319}</Project>
+      <Name>freelancerBD.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\freelancerBD.Service\freelancerBD.Service.csproj">
+      <Project>{5901c84f-36f7-4f06-9ad6-59809dc9314c}</Project>
+      <Name>freelancerBD.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

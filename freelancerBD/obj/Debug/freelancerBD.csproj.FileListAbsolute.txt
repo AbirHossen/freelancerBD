@@ -93,3 +93,15 @@ C:\Users\Atom\source\repos\freelancerBD\freelancerBD\obj\Debug\freelancerBD.cspr
 C:\Users\Atom\source\repos\freelancerBD\freelancerBD\obj\Debug\freelancerBD.csproj.CopyComplete
 C:\Users\Atom\source\repos\freelancerBD\freelancerBD\obj\Debug\freelancerBD.dll
 C:\Users\Atom\source\repos\freelancerBD\freelancerBD\obj\Debug\freelancerBD.pdb
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.Entities.dll
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.Infrastructure.dll
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.IService.dll
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.Service.dll
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.Entities.pdb
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.Entities.dll.config
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.Infrastructure.pdb
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.Infrastructure.dll.config
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.IService.pdb
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.IService.dll.config
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.Service.pdb
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.Service.dll.config
