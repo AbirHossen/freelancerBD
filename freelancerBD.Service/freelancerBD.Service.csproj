@@ -48,7 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AdminActionService.cs" />
+    <Compile Include="AdminCommon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +64,20 @@
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\freelancerBD.Entities\freelancerBD.Entities.csproj">
+      <Project>{8a75abc2-fa38-480c-8946-d4a3d59cc449}</Project>
+      <Name>freelancerBD.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\freelancerBD.Infrastructure\freelancerBD.Infrastructure.csproj">
+      <Project>{F3CF2ED8-E261-4F20-AEA9-497A5234E2D6}</Project>
+      <Name>freelancerBD.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\freelancerBD.IService\freelancerBD.IService.csproj">
+      <Project>{104ca2dd-88d8-435f-85f3-708b0c429319}</Project>
+      <Name>freelancerBD.IService</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

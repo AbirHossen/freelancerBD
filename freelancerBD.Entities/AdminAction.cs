@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace freelancerBD.Entities
-{
+{   [Table("AdminAction")]
     public class AdminAction
     {
         public int id { get; set; }

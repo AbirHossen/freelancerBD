@@ -105,3 +105,8 @@ C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.IService.p
 C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.IService.dll.config
 C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.Service.pdb
 C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\freelancerBD.Service.dll.config
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\Unity.Abstractions.dll
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\Unity.Container.dll
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\Unity.Mvc.dll
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\WebActivatorEx.dll
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD\bin\Unity.Mvc.xml

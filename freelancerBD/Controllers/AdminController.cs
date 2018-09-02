@@ -1,19 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using freelancerBD.Entities;
 using freelancerBD.Infrastructure;
+using freelancerBD.IService;
 
 namespace freelancerBD.Controllers
 {
     public class AdminController : Controller
     {
+
+        private IAdminAction _service;
+
+        public AdminController(IAdminAction service)
+        {
+            _service = service;
+        }
         // GET: Admin
+        [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            return View(_service.GetAll());
+            
+
         }
 
         // GET: Admin/Details/5
@@ -25,6 +37,7 @@ namespace freelancerBD.Controllers
         // GET: Admin/Create
         public ActionResult Create()
         {
+            
             return View();
         }
 

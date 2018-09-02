@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - FreelancerBD </title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("FreelancerBD", "Index", "Admin", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("username", "Index", "Home")</li>
+                    <li>@Html.ActionLink("logout", "Login", "Home")</li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+    <table height="50%" width="12%" cellspacing="0" cellpadding="10" border="1" align="left">
+
+        <tr>
+            <td width="200" valign="top" class="adDash">
+                <li>&nbsp; @Html.ActionLink("DASHBOARD", "Index", "Admin")</li><hr />
+                <b>&nbsp;ACCOUNT</b>
+                <ul>
+
+                    <li><a href="admin/addAdmin.html">ADD ADMIN</a></li>
+                    <li><a href="admin/editProfile.html">EDIT PROFILE</a></li>
+                    <li><a href="admin/adminPassword.html">CHANGE PASSWORD</a></li>
+
+                    <li><a href="admin/adminRecords.html">ADMIN RECORDS</a></li>
+
+
+                </ul>
+                <hr /><b>&nbsp;FREELANCER</b>
+                <ul>
+                    <li><a href="admin/allDevelopers.html">ALL FREELANCERS</a></li>
+
+                </ul>
+
+
+                <hr /><b>&nbsp;CLIENTS</b>
+
+
+                <ul>
+                    <li><a href="admin/allClients.html">ALL CLIENTS</a></li>
+
+
+
+                </ul>
+                <hr /><b>&nbsp;POSTS</b>
+
+
+                <ul>
+                    <li><a href="admin/pendingPost.html">PENDING POSTS</a></li>
+                    <li><a href="admin/ongoingPost.html">ONGOING POSTS</a></li>
+
+
+                </ul>
+                <hr /><b>&nbsp;OTHERS</b>
+                <ul>
+                    <li><a href="admin/reports.html">REPORTS</a></li>
+                    <li><a href="admin/transactions.html">TRANSACTIONS</a></li>
+                    <li><a href="admin/pendingTransaction.html>PENDING TRANSACTION</a></li>
+                    <li><a href="admin/logistics.html">CHARTS</a></li>
+
+
+
+                </ul>
+
+
+
+            </td>
+
+        </tr>
+
+    </table>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer style="align-content : center">
+            <p>&copy; @DateTime.Now.Year - FreelancerBD</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

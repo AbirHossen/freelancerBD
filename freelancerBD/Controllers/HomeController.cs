@@ -39,7 +39,7 @@ namespace freelancerBD.Controllers
                     Session["UserName"] = usr.Name.ToString();
                     if (usr.Role == "Admin")
                     {
-                        return RedirectToAction("Index", "AdminController");
+                        return RedirectToAction("Index", "Admin");
                     }
                     return ViewBag("Error");
 

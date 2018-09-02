@@ -9,3 +9,7 @@ C:\Users\Atom\source\repos\freelancerBD\freelancerBD.IService\obj\Debug\freelanc
 C:\Users\Atom\source\repos\freelancerBD\freelancerBD.IService\obj\Debug\freelancerBD.IService.csproj.CopyComplete
 C:\Users\Atom\source\repos\freelancerBD\freelancerBD.IService\obj\Debug\freelancerBD.IService.dll
 C:\Users\Atom\source\repos\freelancerBD\freelancerBD.IService\obj\Debug\freelancerBD.IService.pdb
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.IService\obj\Debug\freelancerBD.IService.csprojAssemblyReference.cache
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.IService\bin\Debug\freelancerBD.Entities.dll
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.IService\bin\Debug\freelancerBD.Entities.pdb
+C:\Users\Atom\source\repos\freelancerBD\freelancerBD.IService\bin\Debug\freelancerBD.Entities.dll.config
