@@ -51,6 +51,7 @@
     <Compile Include="AdminCommonInterface.cs" />
     <Compile Include="IAdminAction.cs" />
     <Compile Include="IAdminService.cs" />
+    <Compile Include="IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

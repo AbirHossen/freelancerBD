@@ -20,8 +20,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("username", "Index", "Home")</li>
-                    <li>@Html.ActionLink("logout", "Login", "Home")</li>
+                    <li>@Html.ActionLink(Session["userName"].ToString(), "Profile", "Admin",new { @id = Session["userID"]},null)</li>
+                    <li>@Html.ActionLink("logout", "LogOut", "Home")</li>
                    
                 </ul>
             </div>
@@ -35,9 +35,9 @@
                 <b>&nbsp;ACCOUNT</b>
                 <ul>
 
-                    <li><a href="admin/addAdmin.html">ADD ADMIN</a></li>
-                    <li><a href="admin/editProfile.html">EDIT PROFILE</a></li>
-                    <li><a href="admin/adminPassword.html">CHANGE PASSWORD</a></li>
+                    <li>@Html.ActionLink("CREATE PROFILE", "Create", "Admin")</li>
+                    <li>@Html.ActionLink("EDIT PROFILE", "Edit", "Admin", new { @id = Session["userID"] }, null)</li>
+                    <li>@Html.ActionLink("CHANGE PASSWORD", "ChangePassword", "Admin", new { @id = Session["userID"] }, null)</li>
 
                     <li><a href="admin/adminRecords.html">ADMIN RECORDS</a></li>
 

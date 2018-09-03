@@ -1,0 +1,59 @@
+﻿@model freelancerBD.Entities.Admin
+
+@{
+    ViewBag.Title = "Profile";
+  Layout = "~/Views/Admin/_Admin.cshtml";
+}
+
+<h2>Profile</h2>
+
+<div  class="align-text-top" style="font-size: x-large">
+    
+    <hr />
+    <dl style="align-content:center">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.Label("Role")
+        </dt>
+
+        <dd>
+            @Html.Id("Admin")
+        </dd>
+        <dt>
+            @Html.Label("Date of Birth")
+          
+        </dt>
+
+        <dd>
+           
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+
+        <dt>
+            @Html.Label("Joined")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JoiningDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

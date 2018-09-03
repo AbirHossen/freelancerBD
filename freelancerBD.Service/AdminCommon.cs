@@ -18,7 +18,7 @@ namespace freelancerBD.Service
         {
             Context = context;
         }
-        public void Delete(T t, int id)
+        public bool Delete(T t, int id)
         {
             throw new NotImplementedException();
         }
@@ -35,14 +35,37 @@ namespace freelancerBD.Service
             
         }
 
-        public void Insert(T t, int id)
+        public T GetById(int id)
         {
-            throw new NotImplementedException();
+            return Context.Set<T>().Find(id);
         }
 
-        public void Update(T t, int id)
+        public bool  Insert(T t)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Context.Entry<T>(t).State = EntityState.Added;
+                Context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+         public bool  Update(T t)
+        {
+            try
+            {
+                Context.Entry<T>(t).State = EntityState.Modified;
+                Context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

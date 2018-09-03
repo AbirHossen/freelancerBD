@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using freelancerBD.Entities;
-using freelancerBD.Infrastructure;
 using freelancerBD.IService;
 
 namespace freelancerBD.Controllers
@@ -13,27 +11,41 @@ namespace freelancerBD.Controllers
     public class AdminController : Controller
     {
 
-        private IAdminAction _service;
+        private IAdminAction _action;
+        private IAdminService _service;
 
-        public AdminController(IAdminAction service)
+        public AdminController(IAdminAction action,IAdminService service)
         {
+            _action = action;
             _service = service;
         }
         // GET: Admin
         [HttpGet]
         public ActionResult Index()
         {
-            return View(_service.GetAll());
-            
+            return View(_action.GetAll());
+
 
         }
+        [HttpGet]
+        public ActionResult Profile(int id)
+        {
+            return View(_service.GetById(id));
+            
+        }
+        public ActionResult ChangePassword(int id)
+        {
+
+            return View();
+        }
+       
 
         // GET: Admin/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
-
+       
         // GET: Admin/Create
         public ActionResult Create()
         {
@@ -43,19 +55,29 @@ namespace freelancerBD.Controllers
 
         // POST: Admin/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Admin admin)
         {
             try
             {
-                // TODO: Add insert logic here
+                // TODO: Add update logic here
+                bool v = _service.Insert(admin);
+                if (v == true)
+                {
+                    ModelState.AddModelError("", "OK");
+                }
+                if (v == false)
+                {
+                    ModelState.AddModelError("", "ji");
+                }
+                return View();
 
-                return RedirectToAction("Index");
             }
             catch
             {
                 return View();
             }
         }
+
 
         // GET: Admin/Edit/5
         public ActionResult Edit(int id)
@@ -65,13 +87,22 @@ namespace freelancerBD.Controllers
 
         // POST: Admin/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(Admin admin)
         {
             try
             {
                 // TODO: Add update logic here
-
-                return RedirectToAction("Index");
+                bool v = _service.Update(admin);
+                if(v== true)
+                {
+                    ModelState.AddModelError("", "OK");
+                }
+                if(v == false)
+                {
+                    ModelState.AddModelError("", "Success");
+                }
+                return View();
+                
             }
             catch
             {

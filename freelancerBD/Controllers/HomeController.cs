@@ -35,10 +35,11 @@ namespace freelancerBD.Controllers
                 var usr = db.Users.SingleOrDefault(u => u.Name == obj.Name && u.Password == obj.Password);
                 if (usr != null)
                 {
-                    Session["UserID"] = usr.id.ToString();
+                    Session["UserID"] = usr.id;
                     Session["UserName"] = usr.Name.ToString();
                     if (usr.Role == "Admin")
                     {
+                        
                         return RedirectToAction("Index", "Admin");
                     }
                     return ViewBag("Error");
@@ -49,7 +50,15 @@ namespace freelancerBD.Controllers
                     ModelState.AddModelError("", "Username or Password Incorrect");
                 }
             }
+
+
             return View();
+        }
+        [HttpGet]
+        public ActionResult Logout()
+        {
+            Session.Abandon();
+            return RedirectToAction("Login", "Home");
         }
     }
 }

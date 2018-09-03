@@ -9,5 +9,7 @@ namespace freelancerBD.IService
 {
     public interface IAdminService : AdminCommonInterface<Admin>
     {
+        bool ChangePassword(Admin admin);
     }
+    
 }

@@ -10,8 +10,8 @@ namespace freelancerBD.IService
     {
         IEnumerable<T> GetAll();
         T GetById(int id);
-        void Insert(T t, int id);
-        void Update(T t, int id);
-        void Delete(T t, int id);
+        bool Insert(T t);
+        bool Update(T t);
+        bool Delete(T t, int id);
     }
 }

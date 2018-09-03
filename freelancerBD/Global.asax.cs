@@ -24,8 +24,8 @@ namespace freelancerBD
             
             container.RegisterType<DbContext, FreelancerContext>();
             container.RegisterType<IAdminAction, AdminActionService>();
-            //container.RegisterType<IAdminService, AdminService>();
-            //container.RegisterType<IAdminService, Admin>();
+            container.RegisterType<IAdminService, AdminService>();
+            //container.RegisterType<IFReelancerService, FreelancerService>();
 
 
             UnityDependencyResolver unityResolver = new UnityDependencyResolver(container);

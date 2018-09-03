@@ -11,7 +11,7 @@ namespace freelancerBD.Entities
     [Table("User")]
     public class User
     {
-        [Required(ErrorMessage = "Insert id")]
+        
         public int id { get; set; }
         [Required(ErrorMessage = "Insert Username")]
         public string Name { get; set; }
